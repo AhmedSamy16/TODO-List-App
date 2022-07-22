@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #664d55;
+}
+
+.container {
+  width: 800px;
+  margin: 40px auto 0;
+}
+
+.container .form {
+  background-color: #eee;
+  padding: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.container .form input {
+  width: 100%;
+  padding: 15px 110px 15px 15px;
+  border: none;
+  font-size: 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.container .form input:focus {
+  outline: none;
+}
+
+.container .form .add {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: #e91e63;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container .form .add:hover {
+  background-color: #6d102f;
+}
+
+.container .tasks {
+  background-color: #eee;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.container .tasks div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.container .tasks .no-task {
+  display: block;
+  background-color: white;
+  color: #777;
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.container .tasks .task-box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .tasks .task-box.finished {
+  opacity: 0.6;
+}
+
+.container .tasks .delete,
+.container .tasks .done {
+  background-color: #e91e63;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container .tasks .delete:hover,
+.container .tasks .done:hover {
+  background-color: #6d102f;
+}
+.container .tasks .delete {
+  margin-right: 5px;
+}
+
+.container .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.container .info .tasks-num span,
+.container .info .completed span {
+  color: white;
+  padding: 1px 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.container .info .tasks-num span {
+  background-color: #e91e63;
+}
+.container .info .completed span {
+  background-color: rgb(27, 71, 56);
+}
+
+.container .info .delete-all {
+  background-color: #e91e63;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container .info .delete-all:hover {
+  background-color: #6d102f;
+}
